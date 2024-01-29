@@ -10,7 +10,7 @@ on:
       - main
 
 jobs:
-  build:
+  Echo:
     runs-on: ubuntu-latest
 
     steps:
