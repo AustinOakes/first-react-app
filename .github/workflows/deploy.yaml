@@ -10,7 +10,7 @@ on:
       - main
 
 jobs:
-  Echo:
+  Deploy_to_GitHub_Pages:
     runs-on: ubuntu-latest
 
     steps:
