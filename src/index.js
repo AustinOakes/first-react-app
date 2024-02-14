@@ -9,9 +9,9 @@ function Greeting() {
     );
 }
 
-function Greeting2() {
-    return React.createElement('h2', null, 'Hello World!');
-}
+// function Greeting2() {
+//     return React.createElement('h2', null, 'Hello World!');
+// }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
