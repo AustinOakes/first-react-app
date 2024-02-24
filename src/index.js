@@ -16,10 +16,6 @@ const secondBook = {
     img: 'https://m.media-amazon.com/images/I/71zQ-0+fV7L.jpg'
 }
 
-const author = 'James Clear';
-const title = 'Atomic Habits';
-const img = 'https://m.media-amazon.com/images/I/513Y5o-DYtL.jpg'
-
 const BookList = () => {
     return (
         <section className='booklist'>
