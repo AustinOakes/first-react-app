@@ -15,7 +15,6 @@ const BookList = () => {
 }
 
 const Book = () => {
-    const title = 'Atomic Habits';
     return <article className='book'>
         <Image/>
         <Title/>
