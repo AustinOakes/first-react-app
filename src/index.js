@@ -15,6 +15,7 @@ const BookList = () => {
 }
 
 const Book = () => {
+    const title = 'Atomic Habits';
     return <article className='book'>
         <Image/>
         <Title/>
@@ -29,6 +30,10 @@ const Author = () => {
     const inlineHeadingStyles = { color: '#617d98', foontSize: '0.75rem', marginTop: '0.5rem', };
     return <h4 style = {inlineHeadingStyles}>James Clear</h4>
 }
+
+
+// Start with props next
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
