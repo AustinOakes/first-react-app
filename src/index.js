@@ -1,43 +1,50 @@
-import React from 'react';
+import React, { Children } from 'react';
 import ReactDOM from 'react-dom/client';
 
 // importing css
 import './index.css';
 
-const firstBook = {
-    author: 'James Clear',
-    title: 'Atomic Habits',
-    img: 'https://m.media-amazon.com/images/I/513Y5o-DYtL.jpg'
-}
-
-const secondBook = {
-    author: 'Tony Robbins',
-    title: 'The Holy Grail of Investing',
-    img: 'https://m.media-amazon.com/images/I/71zQ-0+fV7L.jpg'
-}
+const books = [
+    {
+        author: 'James Clear',
+        title: 'Atomic Habits',
+        img: 'https://m.media-amazon.com/images/I/513Y5o-DYtL.jpg',
+        id: 1
+    },
+    {
+        author: 'Tony Robbins',
+        title: 'The Holy Grail of Investing',
+        img: 'https://m.media-amazon.com/images/I/71zQ-0+fV7L.jpg',
+        id: 2
+    }
+];
 
 const BookList = () => {
     return (
         <section className='booklist'>
-            <Book author = {firstBook.author} title = {firstBook.title} img={firstBook.img}/>
-            <Book author = {secondBook.author} title = {secondBook.title} img={secondBook.img}/>
+            {books.map((book)=>{
+                return(
+                    <Book {...book} key={book.id}/>
+                );
+            })}
         </section>
     )
 }
 
 const Book = (props) => {
     console.log(props);
+    const { img, title, author } = props;
     return <article className='book'>
         <img 
-            src = {props.img} 
-            alt = {props.title}
+            src = {img} 
+            alt = {title}
         />
-        <h2>{props.title}</h2>
-        <h4>{props.author}</h4>
+        <h2>{title}</h2>
+        <h4>{author}</h4>
     </article>
 }
 
-//Start with child props next
+//Start with Events section next
 
 
 // Gets the root element
