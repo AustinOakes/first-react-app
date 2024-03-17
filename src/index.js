@@ -64,9 +64,9 @@ const Book = (props) => {
     console.log(props);
     const { img, title, author, displayValue } = props;
 
-    const displayTitle = () => {
-        console.log(title);
-    };
+    // const displayTitle = () => {
+    //     console.log(title);
+    // };
 
     return <article className='book'>
         <img 
